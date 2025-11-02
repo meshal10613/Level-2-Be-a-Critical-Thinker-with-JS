@@ -1,3 +1,5 @@
+// Vedio 3 & 4
+
 // Sort---------------------------
 const numbers = [40, 100, 1, 5, 25, 10];
 const fruits = ["apple", "Banana", "cherry", "Date"];
@@ -44,4 +46,4 @@ const range = (start, stop, step) =>
         (_, i) => start + i * step  
     );
 
-console.log(range(1, 11, 1))
+// console.log(range(1, 11, 1))
