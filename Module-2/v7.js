@@ -1,3 +1,4 @@
+// Vedio 7 & 8
 //* Grouping & Aggregating Data
 
 // Scenario: Count every survey & group by response
@@ -37,7 +38,7 @@ const count = surveyResponses.reduce((table, response) => {
     return table;
 }, {});
 
-console.log(count)
+// console.log(count);
 
 
 // Scenario: You have a flat array of sales data & you need to group the sales by category
@@ -48,4 +49,23 @@ const sales = [
     { category: "Books", item: "JS Basics", price: 300, quantity: 2 },
     { category: "Electronics", item: "Bluetooth Speaker", price: 350, quantity: 1 },
     { category: "Home", item: "Chair", price: 550, quantity: 1 },
-]
+    { category: "Electronics", item: "Keyboard", price: 80, quantity: 1 },
+    { category: "Books", item: "React Deep Dive", price: 50, quantity: 1 },
+];
+
+//TODO Init empty obj
+//TODO init obj category
+//TODO calculate the revenue
+
+const totalSalesByCategory = sales.reduce((table, sale) => {
+    const { category, price, quantity } = sale;
+
+    if(!table[category]){
+        table[category] = { totalRevenue: 0, itemsCount: 0 };
+    }
+    table[category].totalRevenue += price * quantity;
+    table[category].itemsCount += quantity;
+
+    return table;
+}, {});
+console.log(totalSalesByCategory)
