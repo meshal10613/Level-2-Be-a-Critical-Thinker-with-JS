@@ -68,4 +68,4 @@ const totalSalesByCategory = sales.reduce((table, sale) => {
 
     return table;
 }, {});
-console.log(totalSalesByCategory)
+// console.log(totalSalesByCategory)
