@@ -13,6 +13,7 @@ class Stack {
         this.items.push(value);
     };
 
+    //* O(1)
     pop (value) { //? remove the last element from the array
         if(this.isEmpty()){
             return undefined;
@@ -20,6 +21,7 @@ class Stack {
         return this.items.pop(value);
     };
 
+    //* O(1)
     peek () { //? get the last item value from the array
         if(this.isEmpty()){
             return undefined;
@@ -27,6 +29,7 @@ class Stack {
         return this.items[ this.items.length - 1 ];
     };
 
+    //* O(1)
     isEmpty () { //? check that the array is empty or not
         return this.items.length === 0;
     };
