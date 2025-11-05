@@ -62,18 +62,29 @@ class LinkedList {
 
         // If insert in in the middle of the linkedlist
         // find the leading node
-        let count = 0;
-        let leadingNode = this.head;
+        const leadingNode = this._traverseToIndex(index - 1);
+        const holdingNode = leadingNode.next;
+        // Create a new node
+        const newNode = new Node(value);
+        leadingNode.next = newNode;
+        newNode.next = holdingNode;
 
-        while( count !== index ) {
-            leadingNode = leadingNode.next;
-            count ++;
-        };
-        console.log(leadingNode)
+        this.length ++;
     };
 
     remove () {
+        
+    };
 
+    _traverseToIndex (index) {
+        let count = 0;
+        let currentNode = this.head;
+
+        while(count !== index) {
+            currentNode = currentNode.next;
+            count ++;
+        };
+        return currentNode;
     };
 
     print () {
