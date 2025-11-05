@@ -21,7 +21,7 @@ class Queue {
     };
 
     //* O(1)
-    peek () {
+    peek () { //? the first item of the array
         if(this.isEmpty()){
             return undefined;
         };

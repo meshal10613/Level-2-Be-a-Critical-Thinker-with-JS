@@ -1,3 +1,5 @@
+// vedio 7, 8, 9 & 10
+//* Linked List
 class Node {
     constructor (value) {
         this.value = value;
@@ -116,12 +118,12 @@ class LinkedList {
 };
 
 const linkedList = new LinkedList();
-linkedList.append(1);
-linkedList.append(2);
-linkedList.append(3);
+// linkedList.append(1);
+// linkedList.append(2);
+// linkedList.append(3);
 
 // linkedList.prepend(4);
 // linkedList.insert(1, 5);
-linkedList.remove(0);
+// linkedList.remove(0);
 
-linkedList.print();
+// linkedList.print();
