@@ -15,8 +15,8 @@ const counter = {
         this.count = this.count + ammount;
     },
 
-    print(){
-        console.log(console.log(this.count))
+    print() {
+        console.log(console.log(this.count));
     },
 };
 
