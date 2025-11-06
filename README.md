@@ -31,4 +31,11 @@
 - module-3 ` v7.js `
 
 
-## Problem Solving
+## Problem Solving (Module-4)
+
+- Vedio 1 - Basic Cache Implementation with Map
+- Vedio 2 - Find The Common Number in Two Array
+- Vedio 3 - Valid Parentheses
+- Vedio 4 - Two Sum
+- Vedio 5 - Palindrome Checker
+- Vedio 6 & 7 - Binary Search
